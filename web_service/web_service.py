@@ -3,7 +3,7 @@ import requests
 
 app = Flask(__name__)
 
-API_URL ="https://hello-cloud4.onrender.com"
+API_URL = "https://hello-cloud4.onrender.com"
 
 HTML = """
 <!doctype html>
@@ -22,15 +22,14 @@ li { background: white; margin: 5px auto; width: 200px; padding: 8px; border-rad
 <h1>Mikro Hizmetli Selam!</h1>
 <p>Adını yaz</p>
 <form method="POST">
-  <input type="text" name="isim" placeholder="Adını yaz" required>
-  <button type="submit">Gönder</button>
+<input type="text" name="isim" placeholder="Adını yaz" required>
+<button type="submit">Gönder</button>
 </form>
-
 <h3>Ziyaretçiler:</h3>
 <ul>
-  {% for ad in isimler %}
-    <li>{{ ad }}</li>
-  {% endfor %}
+{% for ad in isimler %}
+<li>{{ ad }}</li>
+{% endfor %}
 </ul>
 </body>
 </html>
