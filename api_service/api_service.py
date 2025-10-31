@@ -10,7 +10,8 @@ CORS(app)  # Frontend’in bu API’ye erişmesine izin verir (CORS politikası)
 # 🌐 Veritabanı bağlantı adresi (ortam değişkeninden al, yoksa varsayılanı kullan)
 DATABASE_URL = os.getenv(
     "DATABASE_URL",
-    https://api.render.com/deploy/srv-d426js9r0fns738vurl0?key=pMkGU1KEBv8)
+    "postgresql://volkan:201eAcwsVd7cf1jyxQL2F1wn4VZ3FSbW@dpg-d3t90iur433s73b5q070-a.oregon-postgres.render.com/cloud_db_gwjr")
+
 
 # 🔌 Veritabanına bağlanma fonksiyonu
 def connect_db():
