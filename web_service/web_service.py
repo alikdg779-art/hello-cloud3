@@ -4,7 +4,7 @@ import requests, os
 app = Flask(__name__)
 
 # Mikro hizmet API adresini ortam değişkeninden al, yoksa varsayılan değeri kullan
-API_URL = os.getenv("API_URL", "https://hello-cloud4.onrender.com")
+API_URL = os.getenv("API_URL", "https://hello-cloud3-1-o3un.onrender.com")
 
 HTML = """
 <!doctype html>
