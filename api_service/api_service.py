@@ -22,6 +22,7 @@ def ziyaretciler():
 
     if request.method == "POST":
         isim = request.form.get("isim")
+        print("Formdan gelen isim:", isim)
         if isim:
             cur.execute("INSERT INTO ziyaretciler (isim) VALUES (%s)", (isim,))
             conn.commit()
