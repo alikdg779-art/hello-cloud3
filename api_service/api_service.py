@@ -21,7 +21,7 @@ def ziyaretciler():
     cur.execute("CREATE TABLE IF NOT EXISTS ziyaretciler (id SERIAL PRIMARY KEY, isim TEXT)")
 
     if request.method == "POST":
-        isim = request.json.get("isim")
+        isim = request.form.get("isim")
         if isim:
             cur.execute("INSERT INTO ziyaretciler (isim) VALUES (%s)", (isim,))
             conn.commit()
